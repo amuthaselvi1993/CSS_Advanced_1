@@ -1,0 +1,32 @@
+ul {
+  display: flex;
+}
+
+li {
+  padding: 20px 10px;
+  border: 1px solid black;
+  /* list-style: none; */
+}
+li:hover {
+  border: 1px solid red;
+}
+li:active {
+  font-family: "Lucida Sans";
+}
+li:nth-child(odd) {
+  color: gray;
+}
+li::before {
+  content: ">>";
+}
+li::marker {
+  color: violet;
+}
+li:focus {
+  background-color: green;
+}
+@media only screen and (max-width: 700px) {
+  ul {
+    flex-direction: column;
+  }
+}
